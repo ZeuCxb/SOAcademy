@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,cAAc;EACZ,UAAU,EAAE,4CAA4C;EAExD,iBAAE;IACA,KAAK,EAAE,KAAK;IACZ,WAAW,EAAE,eAAe;IAC5B,SAAS,EAAE,IAAI",
+"sources": ["logout.sass"],
+"names": [],
+"file": "logout.css"
+}

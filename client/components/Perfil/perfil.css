@@ -1,0 +1,15 @@
+.perfil-box h2 {
+  color: white;
+  text-shadow: 1px 0 10px #333;
+  font-size: 40px;
+  padding: 0px 10px; }
+.perfil-box i {
+  color: white;
+  text-shadow: 1px 0 10px #333; }
+.perfil-box p {
+  color: white;
+  text-shadow: 1px 0 10px #333; }
+.perfil-box button {
+  text-shadow: 1px 0 10px #333; }
+
+/*# sourceMappingURL=perfil.css.map */

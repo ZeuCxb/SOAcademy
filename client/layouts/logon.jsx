@@ -18,8 +18,6 @@ Logon = React.createClass({
             if(pass.state.value == passConf.state.value) {
                 Accounts.createUser({
                     email: email.state.value,
-                    name: name.state.value,
-                    nick: nick.state.value,
                     password: pass.state.value
                 }, (error) => {
                     if(error) {
@@ -33,6 +31,15 @@ Logon = React.createClass({
 
                         console.log(error.reason);
                     } else {
+                        var _id = Meteor.userId();
+                        var me = {
+                            _id: _id,
+                            name: name.state.value,
+                            nick: nick.state.value
+                        };
+
+                        Meteor.call('createMe', me);
+
                         FlowRouter.go('/');
                     }
                 });

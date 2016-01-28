@@ -1,10 +1,11 @@
-FlowRouter.route('/logout', {
-    name: 'logout',
-    action() {
+FlowRouter.route('/me/:_id', {
+    name: 'me',
+    action(params) {
         if(Meteor.user()) {
-            Meteor.logout();
+            var _id = params._id;
+
             ReactLayout.render(Index, {
-                content: <Logout />
+                content: <Me _id={_id} />
             });
         } else {
             FlowRouter.redirect('/');

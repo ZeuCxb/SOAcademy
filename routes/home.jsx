@@ -1,8 +1,12 @@
 FlowRouter.route('/', {
     name: 'home',
     action() {
-        ReactLayout.render(Index, {
-            content: <Home />
-        });
+        if(!Meteor.user()) {
+            ReactLayout.render(Index, {
+                content: <Home />
+            });
+        } else {
+            FlowRouter.redirect('/timeline');
+        }
     }
 });

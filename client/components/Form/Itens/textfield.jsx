@@ -14,8 +14,8 @@ TextField = React.createClass({
         var type = this.props.type;
         var id = this.props.id;
         var placeholder = this.props.placeholder;
-        var error = this.state.error;
 
+        var error = this.state.error;
         var value = this.state.value;
 
         var className = 'mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield';

@@ -24,7 +24,7 @@ Nav = React.createClass({
                         }
                     }
 
-                    return <Link key={link._id} name={link.name} url={link.url} className={className} />
+                    return <Link key={link._id} name={link.name} url={link.url} className={className} icon={link.icon} />
                 })}
             </nav>
         );

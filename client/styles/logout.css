@@ -1,0 +1,8 @@
+.logoutMessage {
+  background: url("/img/img4.jpg") center/cover !important; }
+  .logoutMessage h2 {
+    color: white;
+    text-shadow: 1px 0 10px #333;
+    font-size: 40px; }
+
+/*# sourceMappingURL=logout.css.map */

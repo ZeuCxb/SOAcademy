@@ -1,10 +1,9 @@
-FlowRouter.route('/logout', {
-    name: 'logout',
+FlowRouter.route('/timeline', {
+    name: 'timeline',
     action() {
         if(Meteor.user()) {
-            Meteor.logout();
             ReactLayout.render(Index, {
-                content: <Logout />
+                content: <Timeline />
             });
         } else {
             FlowRouter.redirect('/');
