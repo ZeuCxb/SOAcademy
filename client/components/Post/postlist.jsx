@@ -20,15 +20,15 @@ PostList = React.createClass({
     render() {
         var posts = this.data.posts;
 
-        if(posts) {
+        if(posts.length > 0) {
             var view = <div>
                 {posts.map(function(post) {
                     return <Post key={post._id} data={post} />;
                 })}
             </div>;
         } else {
-            var view = <div>
-                <div className="mdl-cell mdl-cell--12-col mdl-typography--text-center mdl-color-text--red">
+            var view = <div className="mdl-grid">
+                <div className="no-post mdl-cell mdl-cell--12-col mdl-typography--text-center mdl-color-text--red">
                     NO POST YET!
                 </div>
             </div>;

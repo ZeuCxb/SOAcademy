@@ -7,3 +7,8 @@ MeDB.createMe = function(me) {
 MeDB.getMe = function(_id) {
     return this.findOneFaster({_id: _id});
 };
+
+MeDB.getMeName = function(_id) {
+    var me = this.findOneFaster({_id: _id});
+    return me.nick;
+};

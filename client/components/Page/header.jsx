@@ -22,7 +22,7 @@ Header = React.createClass({
                         </div>
                     </div>
                 </div>
-                <div className="mdl-layout__header-row">
+                <div className="mdl-layout__header-row mdl-layout--large-screen-only">
                     <div className="mdl-layout-spacer"></div>
                     <Nav links={links} />
                 </div>
