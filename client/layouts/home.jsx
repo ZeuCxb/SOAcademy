@@ -1,13 +1,13 @@
 Home = React.createClass({
     componentDidMount() {
-        document.title = 'CSC - Home'
+        document.title = 'SOA - Home'
     },
     render() {
         return(
             <div>
                 <div className="mdl-grid">
                     <div className="mdl-cell mdl-cell--12-col">
-                        <Card title="CSC" action="log">
+                        <Card title="SOAcademy" action="log">
                             Wellcome to "Coders Social Community". The community to Learn, Teach and Growup.
                         </Card>
                     </div>

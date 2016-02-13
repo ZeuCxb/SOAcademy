@@ -1,7 +1,7 @@
 Login = React.createClass({
     mixins: [Validation],
     componentDidMount() {
-        document.title = 'CSC - Log On'
+        document.title = 'SOA - Log In'
     },
     submitForm(event) {
         event.preventDefault();
